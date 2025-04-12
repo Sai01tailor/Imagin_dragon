@@ -35,7 +35,7 @@ let merch_item = [
         type:"tops"
     }
 ];
-document.addEventListener('contextmenu', event => event.preventDefault());
+// document.addEventListener('contextmenu', event => event.preventDefault());
 let total = 0;
 let cart = [];
 for (let item of merch_item) {
