@@ -48,7 +48,7 @@ html{
     transform: translate(38vw,90vh);
     padding: 0.2vw;
     height: 5vh;
-    width:20vw;
+    width:fit-content;
     border-radius: 1vh;
     background-color: rgba(42, 42, 42, 0.548);
     
