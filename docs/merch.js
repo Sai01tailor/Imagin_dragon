@@ -107,5 +107,5 @@ function unhide_me(){
     if(v.hidden)
      v.hidden=false;
     else
-    v .hidden= true;
+    v.hidden= true;
 }
