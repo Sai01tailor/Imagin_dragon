@@ -29,13 +29,6 @@
     width: 2vw;
     filter: invert(1);
 }
-li{
-    display: block;
-    width: 5vw;
-    padding-right: 2vh;
-    height: 5vh;
-    float: left;
-}
 
 .store-items{
     margin-top: 5vh;
