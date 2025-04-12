@@ -73,7 +73,7 @@ html{
 
 }
 #menu_part{
-    height: 45vh;width: 80%; background-color: rgba(128, 128, 128, 0.8);color: white !important;;
+    height: 45vh;width: 35%; background-color: rgba(128, 128, 128, 0.8);color: white !important;;
     z-index: 4;
 }
 /* slide1 */
