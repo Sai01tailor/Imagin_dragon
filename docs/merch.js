@@ -102,10 +102,13 @@ function closeX(){
     document.querySelector(".checkout").style  = "display:none !important;";
     
 }
+
 function unhide_me(){
     let v =document.getElementById("menu_part")
-    if(v.hidden)
+    if(v.hidden){
      v.hidden=false;
-    else
-    v.hidden= true;
+        document.querySelector(".nav-bar-head").style.setProperty("--translunhide","44.25vh");}
+        else{
+        v .hidden= true;
+        document.querySelector(".nav-bar-head").style.setProperty("--translunhide","90vh");}
 }

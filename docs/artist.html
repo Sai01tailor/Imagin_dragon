@@ -46,31 +46,32 @@
     </style>
 </head>
 <body >
-    <menu class="nav-bar">
-        <div class="menu">
-            <span onclick="unhide_me()" >menu</span>
-            <span><a href="#about" style="color:white">about</a></span>
-            <span><a href="#contactUS" style="color: white;">contact us</a></span>
-        </ul></div>
-    </menu>
-    <menu id = "menu_part"class="nav-bar" style="translate:-15%  -40vh;height: 45vh;width: 30%; background-color: rgba(128, 128, 128, 0.8);color: white !important;;" hidden>
-        <div class="footer-right" style="display: flex;justify-content: space-between;width: 80%;;">
-            <ul type="none">
-                <li style="color:white">Explore</li>
-                <li><a href="merch.html">Merch</a></li>
-                <li><a href="music.html">Music</a></li>
-            <li><a href="artist">Artist</a></li>
-            </ul>
-            <ul type="none">
-                <li style="color:white">Follow Now</li>
-                <li><a href="404.html">Twitter</a></li>
-                <li><a href="404.html">Facebook</a></li>
-                <li><a href="404.html">Instagram</a></li>
-                <li><a href="404.html">Youtube</a></li>
+    <div class="nav-bar-head">
+        <menu class="nav-bar">
+            <div class="menu">
+                <span onclick="unhide_me()">menu</span>
+                <span><a href="index.html#about"  style="color: white;">about</a></span>
+                <span><a href="index.html#contactUS" style="color: white;">contact us</a></span>
+            </ul></div>
+        </menu>
+        <menu id = "menu_part"class="nav-bar"  hidden>
+            <div class="footer-right" style="display: flex;justify-content: space-between;width: 80%;;">
+                <ul type="none">
+                    <li style="color:white">Explore</li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="music.html">Music</a></li>
+                <li><a href="artist">Artist profile</a></li>
+                </ul>
+                <ul type="none">
+                    <li style="color:white">Follow Now</li>
+                    <li><a href="404.html">Twitter</a></li>
+                    <li><a href="404.html">Facebook</a></li>
+                    <li><a href="404.html">Instagram</a></li>
+                    <li><a href="404.html">Youtube</a></li>
 
-            </ul>
-    </div>
-    </menu>
+                </ul>
+        </div>
+        </menu></div>
     <h1 >Imagine Dragons<span style="color: grey;" > | Artists</span></h1>
     <br><br>
         <div  class="block">
@@ -111,13 +112,16 @@
         </footer>
     <script>
 document.addEventListener('contextmenu', event => event.preventDefault());
+
 function unhide_me(){
     let v =document.getElementById("menu_part")
-    if(v.hidden)
+    if(v.hidden){
      v.hidden=false;
-    else
-    v .hidden= true;
-}
+        document.querySelector(".nav-bar-head").style.setProperty("--translunhide","44.25vh");}
+        else{
+        v .hidden= true;
+        document.querySelector(".nav-bar-head").style.setProperty("--translunhide","90vh");}
+}   
     </script>
 </body>
 </html>
