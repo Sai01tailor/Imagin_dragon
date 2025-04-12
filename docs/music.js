@@ -95,3 +95,10 @@ function playsong1(src) {
         
         
 }
+function unhide_me(){
+    let v =document.getElementById("menu_part")
+    if(v.hidden)
+     v.hidden=false;
+    else
+    v .hidden= true;
+}
