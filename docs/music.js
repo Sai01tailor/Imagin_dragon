@@ -5,35 +5,35 @@ let merch_item = [
         title: "Title",
         album: 'album',
         artist: 'artist',
-        Url: "believer.mp3"
+        Url: "assets/believer.mp3"
     },
     {
         card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
-        Url: "believer.mp3"
+        Url: "assets/believer.mp3"
     },
     {
         card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
-        Url: "believer.mp3"
+        Url: "assets/believer.mp3"
     },
     {
         card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
-        Url: "believer.mp3"
+        Url: "assets/believer.mp3"
     },
     {
         card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
-        Url: "believer.mp3"
+        Url: "assets/believer.mp3"
     }
 ];
 function unhide_me(){
