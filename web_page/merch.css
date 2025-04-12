@@ -1,0 +1,198 @@
+.title{
+    position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content
+}
+.nav-bar{
+    left:2.5%;
+}
+#new{
+    background-image: url(/assets/back_merge.jpg);
+    background-size: cover;
+    height: 70vh;
+    width: 99vw;
+}
+
+.store-nav{
+    position: relative;
+    justify-self: end;
+    margin-top:2vh;
+    margin-right: 2vw;
+}
+
+.title h1{
+    display: inline;
+}
+.title svg{
+    width: 2vw;
+    filter: invert(1);
+}
+li{
+    display: block;
+    width: 5vw;
+    padding-right: 2vh;
+    height: 5vh;
+    float: left;
+}
+
+.store-items{
+    margin-top: 5vh;
+    margin-left: 10vh;
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+
+}
+
+.item-card{
+  margin-bottom: 4vh;;
+    padding:2vh;
+    height: 63vh;
+    aspect-ratio: 2/3;
+    color:black;
+    border:2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.images{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover !important;
+}
+
+.text{
+  
+    height:20%;
+    color:white;
+}
+
+.titled{
+    margin-bottom: 20px;
+}
+
+.show-more{
+    margin-bottom: 3vh;
+    background-color: white;
+    border-radius: 2vh;
+    height: 4vh;
+    width: 8vw;
+    font-size: small;
+    font-weight: 600;
+    border: 0;
+}
+
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    width: 6vw;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;background-color: black;}
+  
+  .dropdown:hover .dropbtn {text-decoration: underline 2px solid white;}
+
+  .cart-icon {
+    color: blue;
+  }
+
+  .add-to-cart{
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 100%;
+    height:35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+  }
+  .add-to-cart:hover{
+    filter: invert(1);
+  }
+
+  .checkout{
+    box-shadow: inset 2px 2px 10px rgba(255, 255, 255, 0.23),inset -2px -2px 10px rgba(255, 253, 253, 0.23);
+    position: fixed;
+    z-index: 2;
+    height: 80vh;
+    width: 80vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 5vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2vh;
+    display: none;
+ }
+ .proceed{
+  height: 5vh;
+  width: 10vw;
+  background-color: white;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 0;
+  border-radius: 1vh;
+ }
+
+ .checkout-item{
+  padding:2vh;  
+  border: 2px solid white;
+  height: 80%;  
+  overflow-y: auto;
+  display: flex;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  flex-direction: column;
+ }
+ .checkout-item >div{
+  height: 20vh !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .checkout-item div{
+  height: 100%;
+ }
+ 

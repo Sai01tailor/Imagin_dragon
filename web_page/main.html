@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="script" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div class="back">
+        <menu class="nav-bar">
+            <div class="menu">
+                <span onclick="unhide_me()">menu</span>
+                <span><a href="#about">about</a></span>
+                <span><a href="#contactUS">contact us</a></span>
+                <h3 style="align-self: center;">|</h3>
+                <span id="songs-nav" onclick="playsong1('believer.mp3')">song</span>
+            </ul></div>
+        </menu>
+        <menu id = "menu_part"class="nav-bar" style="translate:-15%  -40vh;height: 45vh;width: 30%; background-color: rgba(128, 128, 128, 0.8);color: white !important;;" hidden>
+            <div class="footer-right" style="display: flex;justify-content: space-between;width: 80%;;">
+                <ul type="none">
+                    <li style="color:white">Explore</li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="music.html">Music</a></li>
+                <li><a href="artist">Artist profile</a></li>
+                </ul>
+                <ul type="none">
+                    <li style="color:white">Follow Now</li>
+                    <li><a href="404.html">Twitter</a></li>
+                    <li><a href="404.html">Facebook</a></li>
+                    <li><a href="404.html">Instagram</a></li>
+                    <li><a href="404.html">Youtube</a></li>
+
+                </ul>
+        </div>
+        </menu>
+        <div class="slide1">
+            <div><h3>empowering artist</h3><div class="img-slide1"><img  src="/assets/img-side1-1.png" style="object-fit:cover;height: 100%;width:100%"></div></div>
+            <div class="hero2" style="display: flex;align-items: last baseline;justify-content: center;">
+                <h1 id="title" style="font-size:15vh;">Imagine Dragons</h1>
+            </div>
+            <div class="hero3" style="display: flex;align-items: last baseline;justify-content:right;">
+               <div><div class="img-slide1" style="translate: 0;width:20vw;height: 20vh;"><img  src="/assets/img-side1-2.png" style="object-fit:cover;height: 100%;width:100%"></div><h2>empowering artist</h2></div>
+            </div>
+        </div>
+        
+        <div class="slide2">
+            <div style="display: flex;justify-content: center;">
+                <div onmouseover="animated_card_slide()" onmouseout="animated_card_slide_off()" id="cards"></div>
+            </div>
+            <p>
+                Empowering Artist AND <br>Redefining The Future of Music.
+            </p>
+            <div class="design"><img src="/assets/design.jpg" alt="design"></div>
+        </div>
+        <div class="about" id="about">
+            <p>
+                Empowering artists,<br>
+    captivating global audiences,<br>
+    and redefining the future of music <br>
+    as a dynamic record label.
+            </p>
+            <div><div class="anime"><span>&gt;</span><span>&lt;</span></div><span style="align-content: center;">Proud recipients of 6 x RIAA Gold® awards!</span></div>
+        </div>
+        <div class="disc" onmouseover="disc()" onmouseout="disc_off()">
+        <div class="disc-1sthalf">
+            <div ></div>
+            <div ></div>
+            <div style="align-content: center;text-align: end;font-size: 3vh;">Imagine&nbsp;</div>
+        </div>
+        <div class="disc-2ndhalf">
+            <div></div>
+            <div></div>
+            <div style="align-content: center;font-size: 3vh;">Dragons</div>
+        </div>
+        </div>
+        <div class="artist-hero" id="artist-hero">
+            <div class="left"><div >OUR <br><span>(Meet Our artist)</div></span><div style="align-self: last baseline;">ARTIST</div></div>
+            <div class="right"><div class="waves"></div><p>Kurate Music has had the privilege of collaborating with <br>
+                a diverse array of independent acts, covering genres <br>
+                ranging from ambient to pop, and everything in between.</p><div style="font-weight: 800;width:90%; border-bottom: 2px solid black;display: flex;justify-content: space-between; align-content: center;"><a ><p class="learn-more">learn more</p></a><a><img class="arrowed" src="/assets/arrow.png" class="arrowed" alt="arrow"></a></div>
+            </div>
+        </div>
+        <div class="artist-card" >
+            <div><h3><sup>(1)&nbsp;</sup>Dan Reynolds</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam cum quidem autem laudantium quia magni. Error expedita consequuntur adipisci magni doloremque, cupiditate itaque rem aperiam atque quaerat labore iure quisquam quod! Atque accusamus ad soluta fugit? Ullam beatae possimus, et est distinctio rerum excepturi reiciendis quisquam sapiente iure?</p><div class="artist-card-image"><img  src="/assets/dan.png" style="object-fit:fill;height: 100%;width:80%;border: 1px solid white;"></div></div>
+            <div><div class="artist-card-image"><img  src="/assets/Wayne_Sermon.png" style="object-fit:cover;height: 100%;width:80%;border: 1px solid white;"></div><h3><sup>(2)&nbsp;</sup>Wayne  Sermon</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum sequi molestias perferendis enim optio sint? Quisquam provident sint similique eos cumque libero sed nihil! Nesciunt laborum quo fugiat deleniti totam animi tempora temporibus ut soluta iusto dicta iste quod voluptate mollitia alias, voluptatum blanditiis tempore distinctio numquam!</p></div>
+            <div><h3><sup>(3)&nbsp;</sup>Ben  McKee</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam cum quidem autem laudantium quia magni. Error expedita consequuntur adipisci magni doloremque, cupiditate itaque rem aperiam atque quaerat labore iure quisquam quod! Atque accusamus ad soluta fugit? Ullam beatae possimus, et est distinctio rerum excepturi reiciendis quisquam sapiente iure?</p><div class="artist-card-image"><img  src="/assets/ben.webp" style="object-fit:cover;height: 100%;width:80%;border: 1px solid white;"></div></div>
+        </div>
+        <div class="slide3">
+            <div id="p1"><h2>LET'S <br>EXPLORE</h2><div><div class="anime"><span>&gt;</span><span>&lt;</span></div><span style="align-content: center;">Proud recipients of 6 x RIAA Gold® awards!</span></div></div>
+            <div>
+                <div style="display: flex;flex-direction: row;justify-content: space-between;padding-left: 5vw;padding-right: 5vw;align-items: center;"><h2 style="font-size: 5vw;">OUR<br>RECORDS</h2><a><img class="arrowed" src="/assets/arrow.png" class="arrowed" alt="arrow" style="scale: 3;"></a>
+            </div>
+                <div style="padding-left: 5vw;padding-right: 5vw;">
+                    <table>
+                        <tr >
+                            <td class="srNO"  style="border-bottom: 2px solid white;"></td>
+                            <td class="tracks"  style="border-bottom: 2px solid white;">track</td>
+                            <td class="artist"  style="border-bottom: 2px solid white;">artist(s)</td>
+                            <td class="genre" style="border-bottom: 2px solid white;" >genre(s)</td>
+                        </tr>
+                        <tr class="section-music" onclick="playsong1('believer.mp3')">
+                            <td class="srNO">1.</td>
+                            <td class="tracks"><button class="music-btn"><div><img src="/assets/logo.png" alt="">BELIEVER</div></button></td>
+                            <td class="artist">Dan Reynold, Wayne Sermon, Ben McKee </td>
+                            <td class="genre" >arena rock and pop rock</td>
+                        </tr>
+                        <tr class="section-music" onclick="playsong1('believer.mp3')">
+                            <td class="srNO">2.</td>
+                            <td class="tracks"><button class="music-btn"><div><img src="/assets/logo.png" alt="">BELIEVER</div></button></td>
+                            <td class="artist">Dan Reynold, Wayne Sermon, Ben McKee </td>
+                            <td class="genre" >arena rock and pop rock</td>
+                        </tr>
+                        <tr class="section-music" onclick="playsong1('believer.mp3')">
+                            <td class="srNO">3.</td>
+                            <td class="tracks"><button class="music-btn"><div><img src="/assets/logo.png" alt="">BELIEVER</div></button></td>
+                            <td class="artist">Dan Reynold, Wayne Sermon, Ben McKee </td>
+                            <td class="genre" >arena rock and pop rock</td>
+                        </tr>
+                        <tr class="section-music" onclick="playsong1('believer.mp3')">
+                            <td class="srNO">4.</td>
+                            <td class="tracks"><button class="music-btn"><div><img src="/assets/logo.png" alt="">BELIEVER</div></button></td>
+                            <td class="artist">Dan Reynold, Wayne Sermon, Ben McKee </td>
+                            <td class="genre" >arena rock and pop rock</td>
+                        </tr>
+                        <tr class="section-music"  onclick="playsong1('believer.mp3')">
+                            <td class="srNO">5.</td>
+                            <td class="tracks"><button class="music-btn"><div><img src="/assets/logo.png" alt="">BELIEVER</div></button></td>
+                            <td class="artist">Dan Reynold, Wayne Sermon, Ben McKee </td>
+                            <td class="genre" >arena rock and pop rock</td>
+                        </tr>
+                    </table>
+                    <div style="font-weight: 800;width:90%; border-bottom: 2px solid black;display: flex;justify-content: space-between; align-content: center;"><a href="music.html"><p class="learn-more">Show more</p></a><a href="music.html"><img class="arrowed" src="/assets/arrow.png" class="arrowed" alt="arrow"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="slideLast">
+            <marquee>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum quam ex modi, nobis itaque beatae asperiores debitis error quaerat! Pariatur, facere laboriosam.</marquee>
+        </div>
+        <form class="contact" id="contactUS">
+            <h1 style="text-decoration: underline;">Contact Us</h1>
+            <p>
+                "Hi, My Name Is <input type="text" placeholder="Your Full Name" id="contact_field">, And You Can Reach Me At <input type="email" placeholder="Your Email Address" id="contact_field"> Or <input type="number" placeholder="Your Phone Number" id="contact_field">. I’m Reaching Out About <input type="text" placeholder="Your Reason for Contact" id="contact_field" style="width: 45vw;">. I’d Appreciate Any Help Or Information You Can Provide, And I’m Happy To Chat Further If Needed. Looking Forward To Your Response!"
+            </p>
+            <input type="submit"  id="contact_field">
+        </form>
+        <footer>
+            <div > 
+                <div style="overflow: hidden;"><h2 style="animation: glow_up .8s linear;">Imagine Dragons</h2></div>
+                <div style="overflow: hidden;"><h6 style="color: grey;animation: glow_up 0.8s linear;">Imagine Dragons</h6></div>
+            </div>
+            <div>
+            <div class="footer-right">
+                    <ul type="none">
+                        <li style="color:white">Explore</li>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="#artist-hero">Artists</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                    <ul type="none">
+                        <li style="color:white">Follow Now</li>
+                        <li><a href="404.html">Twitter</a></li>
+                        <li><a href="404.html">Facebook</a></li>
+                        <li><a href="404.html">Instagram</a></li>
+                        <li><a href="404.html">Youtube</a></li>
+
+                    </ul>
+            </div></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

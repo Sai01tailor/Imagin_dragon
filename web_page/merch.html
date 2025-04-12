@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="merch.css">
+    <link rel="script" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  </head>
+  <body style="padding: 0;">
+    <menu class="nav-bar">
+      <div class="menu">
+        <span>menu</span>
+        <span><a href="main.html#about">about</a></span>
+        <span><a href="main.html#contactUS">contact us</a></span>
+      </ul>
+    </menu>
+    <h1 class="title">Imagine Dragons</h1>
+    <div class="title" style="margin: 2vh;left: auto;" onclick="checkout()" >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M528.1 301.3l47.3-208C578.8 78.3 567.4 64 552 64H159.2l-9.2-44.8C147.8 8 137.9 0 126.5 0H24C10.7 0 0 10.7 0 24v16c0 13.3 10.7 24 24 24h69.9l70.2 343.4C147.3 417.1 136 435.2 136 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-15.7-6.4-29.8-16.8-40h209.6C430.4 426.2 424 440.3 424 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-22.2-12.9-41.3-31.6-50.4l5.5-24.3c3.4-15-8-29.3-23.4-29.3H218.1l-6.5-32h293.1c11.2 0 20.9-7.8 23.4-18.7z"/></svg>
+    <h1 class="nos-cart">5</h1>
+  </div></a>
+    <div id="new">
+        <div class="images-new"></div>
+        
+    </div>
+    <div class="store">
+        <div class="store-nav">
+            <div class="dropdown">
+              <button class="dropbtn">Category</button>
+                <div class="dropdown-content">
+                  <a href="#store-items">T-Shirts</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Price</button>
+                <div class="dropdown-content">
+                  <a href="#store-items">under 100USD</a>
+                  <a href="#store-items">under 50USD</a>
+                  <a href="#store-items">under 25USD</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Sort by</button>
+                <div class="dropdown-content">
+                  <a href="#store-items">price  ▲</a>
+                  <a href="#store-items">price ▼</a>
+                  <a href="#store-items">best selling</a>
+                </div>
+              </div>
+        </div>
+        <hr >
+        <div class="store-items" id="store-items">
+            
+        </div>
+
+        <div style="display: flex;justify-content: center;"><button class="show-more" onclick="show_more()">Show more</button></div>
+    </div>
+    <footer>
+        <div > 
+            <div style="overflow: hidden;"><h2 style="animation: glow_up  0.8s linear;">Imagine Dragons</h2></div>
+            <div style="overflow: hidden;"><h6 style="color: grey;animation: glow_up 0.8s linear;">Imagine Dragons</h6></div>
+        </div>
+        <div>
+        <div class="footer-right">
+                <ul type="none">
+                    <li style="color:white">Explore</li>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="main.html#artist-hero">Artists</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+                <ul type="none">
+                    <li style="color:white;width:fit-content">Follow Now</li>
+                    <li><a href="404.html">Twitter</a></li>
+                    <li><a href="404.html">Facebook</a></li>
+                    <li><a href="404.html">Instagram</a></li>
+                    <li><a href="404.html">Youtube</a></li>
+
+                </ul>
+        </div></div>
+    </footer>
+    
+    <div  class="checkout">
+      <h1 style="color: white;cursor: pointer; user-select: none;" onclick="closeX()">X</h1>
+      <div class="checkout-item"></div>
+      <button class="proceed" onclick="alert('feature is not available.')">pay the amount</button>
+    </div>
+    <script src="merch.js">
+    </script>
+</body>
+</html>
