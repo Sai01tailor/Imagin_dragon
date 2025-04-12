@@ -114,7 +114,7 @@ html{
 #cards{
     position: relative;
     height: 70vh;
-    background-image: url(/assets/img-side1-1.png);
+    background-image: url(assets/img-side1-1.png);
     background-size:cover;
     width: 25vw;
 }
@@ -124,7 +124,7 @@ html{
     z-index: -1;
     height: 70vh;
     width: 25vw;
-    background-image: url(/assets/img-side1-1.png);
+    background-image: url(assets/img-side1-1.png);
     background-size:cover;
     translate: var(--pseudo_content1);
     transform: rotateZ(var(--rot_slide1));
@@ -136,7 +136,7 @@ html{
     z-index: -2;
     height: 70vh;
     width: 25vw;
-    background-image: url(/assets/img-side1-1.png);
+    background-image: url(assets/img-side1-1.png);
     background-size:cover;
     translate: var(--pseudo_content);
     transform: rotateZ(var(--rot_slide));

@@ -1,35 +1,35 @@
 document.addEventListener('contextmenu', event => event.preventDefault());
 let merch_item = [
     {
-        card_image: "/assets/card_image.png",
+        card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
         Url: "believer.mp3"
     },
     {
-        card_image: "/assets/card_image.png",
+        card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
         Url: "believer.mp3"
     },
     {
-        card_image: "/assets/card_image.png",
+        card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
         Url: "believer.mp3"
     },
     {
-        card_image: "/assets/card_image.png",
+        card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
         Url: "believer.mp3"
     },
     {
-        card_image: "/assets/card_image.png",
+        card_image: "assets/card_image.png",
         title: "Title",
         album: 'album',
         artist: 'artist',
