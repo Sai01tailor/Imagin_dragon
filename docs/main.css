@@ -7,9 +7,13 @@ padding: 8px;
   
   width: 98%;
   height: 100vh;
-  font-family: "Audiowide", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+ 
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+  
   
   background: black;
   background-image: linear-gradient(rgba(255, 255,255, .05) .1em, transparent .1em), linear-gradient(90deg, rgba(255, 255, 255, .05) .1em, transparent .1em);
@@ -114,7 +118,6 @@ html{
 
 .slide2{
     padding-top: 10vh;
-    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,22 +157,67 @@ html{
 
 .slide2 p{
 margin: 40px;
-font-size: 5vh;
+font-size: 2.65vh;
+font-weight: 350;
+color:#ffffff80;
 text-align: center;
 }
 
 /* slide3 - about */
 
-.about  p{
+.about  h4{
+    position: relative;
     margin: 4vh;
-    font-size: 7vh;
+    font-size: 10vh;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 10vh;
 }
-
-.about p::before{
-    content: "(about)";
-    font-size: 2vh;
+.showinwaves{
+    translate: 0 0.15em;
+    position: relative;
+    display: inline-block;
+    border-radius: 10000px;
+    overflow: hidden;
+    height: 1em;
+    width: 3em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.spectro{
+    position: absolute;
+    background-color: transparent;
+    z-index: 3;
+    height: 1em;
+    width: 3em;
+}
+.spectro div{
+    margin-right:0.1em ;
+    background-color: white;
+    height: 0.95em;
+    width: 0.3em;
+    border-radius: 1000px;
+    animation: spectros  0.75s infinite alternate linear;
+}
+@keyframes spectros {
+    from{
+        transform: translateY(0.5em);
+    }
+    to{
+        transform: translateY(1em);
+    }
+}
+.showinwaves img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about h4::before{
+    position: absolute;
+    content: "(About)";
+    font-size: 2.5vh;
+    color: #ffffff80;
+    translate: -8vw 2vh;
 }
 
 .about div{
@@ -276,13 +324,17 @@ text-align: center;
 .artist-hero{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height:30vh
 }
 
 .left{
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    font-size: 15vh;
+    grid-template-columns: 1fr 3fr;
+    font-size: 20vh;
+    font-weight: 400;
+    line-height: 10vh;
     color: white;
+    margin-right: 4vw;
     -webkit-text-stroke: 2px white;
     animation: appear linear;
     animation-timeline: view();
@@ -299,22 +351,30 @@ text-align: center;
     }
 }
 .left span{
+    position: absolute;
+    bottom: -8vh;
+    line-height: 1.5em;
     -webkit-text-stroke: 0px;
     color: gray;
-    font-size: 2vh;
+    font-size: 2.75vh;
 }
 .right{
     border-left: 2px solid black;
-    font-size: 4vh;
+    font-size: 2.2vh;
+    font-weight:400;
     display: flex;
-    flex-direction: column;justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
-
+.right p{
+    line-height: 3vh;
+    color:#ffffff80;
+}
 /* .artist-card */
 .artist-card{
     margin-top: 10vh;
-    height: 85vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -325,7 +385,18 @@ text-align: center;
     justify-content: space-around;
     border: 1px solid white;
 }
+.artist-card div h3{
+    font-size: 4vh;
+}
+.artist-card div h3 sup{
+    margin-right: 5%;
+    font-size: 2vh;
+    color:  #ffffff80;
+}
+.artist-card div p{
+    color:  #ffffff80;
 
+}
 .artist-card-image{
     padding: 0 !important;
     width: 100%;
@@ -427,11 +498,15 @@ footer>div{
     border: 2px solid white;
 }
 footer li:hover,.learn-more:hover{
-    text-decoration: underline 1px;
+    text-decoration: underline 2px;
 }
 .learn-more{
     display:inline;
-    align-content:center;
+    color: white !important;
+    font-size: 3vh;
+    align-content:end;
+    margin-right: 8px;
+    text-decoration: underline 2px;
 }
 /* animating &&effects */
 .fade-bg {
@@ -440,8 +515,8 @@ footer li:hover,.learn-more:hover{
 
 
 .arrowed{
-    width: 2em;
-    height:2em;
+    width: 1.5em;
+    height:1.5em;
     object-fit: contain;
     filter: invert(1);
     transform: rotate(-150deg);
@@ -452,12 +527,13 @@ footer li:hover,.learn-more:hover{
 }
 
 .waves{
-    height:8vh;
-    width:10vw;
+    height:6vh;
+    width: 10vh;
     background-image: linear-gradient(red,orange,yellow);
     border-radius: 90px;
-    mask-image: url(waves.svg);
+    mask-image: url(assets/waves.png);
     mask-repeat: no-repeat;
+    mask-size: contain;
 }
 
 /* link  */
@@ -521,12 +597,14 @@ a{
 }
 
 .contact{
-    height: 55vh;   
+    margin-top: 100px;
+    height: 40vh;   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 5vh;
-    font-size: 4vh;
+    font-size: 3vh;
+    line-height: 2.2em;
 }
 
 .contact input[type = "submit"]{
@@ -541,14 +619,16 @@ a{
 
 }
 .contact input[type = "text"],.contact input[type = "email"],.contact input[type = "number"]{
+    padding-left: 8px;
+    padding-right: 8px;
     height: 5vh;
-    font-size: x-large;
-    width: fit-content;
+    font-size: 3vh;
+    width: 20vw;
     border: 0;
     border-bottom:2px solid white ;
     background-color: transparent;
     color: white;
-    font-weight: 800;
+    font-weight: 500;
 
 }
 

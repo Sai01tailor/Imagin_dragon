@@ -35,7 +35,7 @@ let merch_item = [
         type:"tops"
     }
 ];
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 let total = 0;
 let cart = [];
 for (let item of merch_item) {
@@ -107,7 +107,7 @@ function unhide_me(){
     let v =document.getElementById("menu_part")
     if(v.hidden){
      v.hidden=false;
-        document.querySelector(".nav-bar-head").style.setProperty("--translunhide","49.25vh");}
+        document.querySelector(".nav-bar-head").style.setProperty("--translunhide","48.75vh");}
         else{
         v .hidden= true;
         document.querySelector(".nav-bar-head").style.setProperty("--translunhide","90vh");}

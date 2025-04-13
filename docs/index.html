@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="main.css">
     <link rel="script" href="script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body >
+<body>
     <div class="back">
         <div class="nav-bar-head">
         <menu class="nav-bar">
@@ -22,7 +22,7 @@
                 <span id="songs-nav" onclick="playsong1('assets/believer.mp3')">song</span>
             </ul></div>
         </menu>
-        <menu id = "menu_part"class="nav-bar"  hidden>
+        <menu id = "menu_part"class="nav-bar"  style="background-color: rgba(128, 128, 128, 0.05)!important;backdrop-filter: blur(1em) !important;border: 2px solid rgba(128, 128, 128, 0.219);" hidden>
             <div class="footer-right" style="display: flex;justify-content: space-between;width: 80%;;">
                 <ul type="none">
                     <li style="color:white">Explore</li>
@@ -55,17 +55,29 @@
                 <div onmouseover="animated_card_slide()" onmouseout="animated_card_slide_off()" id="cards"></div>
             </div>
             <p>
-                Empowering Artist AND <br>Redefining The Future of Music.
+                EMPOWERING  ARTISTS AND <br>REDEFINING <span style="color: white;">THE FUTURE OF MUSIC.</span>
             </p>
             <div class="design"><img src="assets/design.jpg" alt="design"></div>
         </div>
         <div class="about" id="about">
-            <p>
+            <h4>
                 Empowering artists,<br>
-    captivating global audiences,<br>
+    captivating global<section class="showinwaves"><div class="spectro"><div></div>
+    <div></div>
+    <div style="animation-delay: 0.2s;"></div>
+    <div style="animation-delay: 0.4s;"></div>
+    <div style="animation-delay: 0.0s;"></div>
+    <div style="animation-delay: 0.2s;"></div>
+    <div style="animation-delay: 0.0s;"></div>
+    <div style="animation-delay: 0.2s;"></div>
+    <div style="animation-delay: 0.0s;"></div>
+    <div style="animation-delay: 0.2s;"></div>
+    <div style="animation-delay: 0.4s;"></div>
+</div>
+    <img src="assets/show.jpg"  alt=""></section>audiences,<br>
     and redefining the future of music <br>
     as a dynamic record label.
-            </p>
+</h4>
             <div><div class="anime"><span>&gt;</span><span>&lt;</span></div><span style="align-content: center;">Proud recipients of 6 x RIAA Gold® awards!</span></div>
         </div>
         <div class="disc" onmouseover="disc()" onmouseout="disc_off()">
@@ -81,16 +93,16 @@
         </div>
         </div>
         <div class="artist-hero" id="artist-hero">
-            <div class="left"><div >OUR <br><span>(Meet Our artist)</div></span><div style="align-self: last baseline;">ARTIST</div></div>
+            <div class="left"><div style="position: relative;">OUR <br><span>(Meet <br> Our  artist)</div></span><div style="align-self: last baseline;">ARTIST</div></div>
             <div class="right"><div class="waves"></div><p>Kurate Music has had the privilege of collaborating with <br>
                 a diverse array of independent acts, covering genres <br>
-                ranging from ambient to pop, and everything in between.</p><div style="font-weight: 800;width:90%; border-bottom: 2px solid black;display: flex;justify-content: space-between; align-content: center;"><a ><p class="learn-more">learn more</p></a><a><img class="arrowed" src="assets/arrow.png" class="arrowed" alt="arrow"></a></div>
+                ranging from ambient to pop, and everything in between.</p><div style="font-weight: 800;width:90%; border-bottom: 2px solid black;display: flex; align-content: center;"><a href="artist.html"><p class="learn-more">learn more</p><img class="arrowed" src="assets/arrow.png" class="arrowed" alt="arrow"></a></div>
             </div>
         </div>
         <div class="artist-card" >
-            <div><h3><sup>(1)&nbsp;</sup>Dan Reynolds</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam cum quidem autem laudantium quia magni. Error expedita consequuntur adipisci magni doloremque, cupiditate itaque rem aperiam atque quaerat labore iure quisquam quod! Atque accusamus ad soluta fugit? Ullam beatae possimus, et est distinctio rerum excepturi reiciendis quisquam sapiente iure?</p><div class="artist-card-image"><img  src="assets/dan.png" style="object-fit:fill;height: 100%;width:80%;border: 1px solid white;"></div></div>
-            <div><div class="artist-card-image"><img  src="assets/Wayne_Sermon.png" style="object-fit:cover;height: 100%;width:80%;border: 1px solid white;"></div><h3><sup>(2)&nbsp;</sup>Wayne  Sermon</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum sequi molestias perferendis enim optio sint? Quisquam provident sint similique eos cumque libero sed nihil! Nesciunt laborum quo fugiat deleniti totam animi tempora temporibus ut soluta iusto dicta iste quod voluptate mollitia alias, voluptatum blanditiis tempore distinctio numquam!</p></div>
-            <div><h3><sup>(3)&nbsp;</sup>Ben  McKee</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam cum quidem autem laudantium quia magni. Error expedita consequuntur adipisci magni doloremque, cupiditate itaque rem aperiam atque quaerat labore iure quisquam quod! Atque accusamus ad soluta fugit? Ullam beatae possimus, et est distinctio rerum excepturi reiciendis quisquam sapiente iure?</p><div class="artist-card-image"><img  src="assets/ben.webp" style="object-fit:cover;height: 100%;width:80%;border: 1px solid white;"></div></div>
+            <div><h3><sup>(1)</sup>Dan Reynolds</h3><p>Daniel Coulter Reynolds (born July 14, 1987)  is an American singer, songwriter, and musician. He is the lead vocalist and a founding member of the pop rock band Imagine Dragons, which formed in 2008. He is a recipient of the Songwriters Hall of Fame Hal David Starlight Award.</p><div class="artist-card-image"><img  src="assets/dan.png" style="object-fit:fill;height: 100%;width:80%;border: 1px solid white;"></div></div>
+            <div><div class="artist-card-image"><img  src="assets/Wayne_Sermon.png" style="object-fit:cover;height: 100%;width:80%;border: 1px solid white;"></div><h3><sup>(2)&nbsp;</sup>Wayne  Sermon</h3><p>Wayne Sermon is the lead guitarist of the American rock band Imagine Dragons. Known for his dynamic guitar work and atmospheric soundscapes, he plays a key role in shaping the band’s unique alt-rock style. A classically trained musician from Berklee College of Music, Sermon blends technical precision with emotional depth. His stage presence and versatile playing have contributed to the band’s global success, making him an influential figure in modern rock and a defining force behind Imagine Dragons' sound.</p></div>
+            <div><h3><sup>(3)&nbsp;</sup>Ben  McKee</h3><p>Ben McKee is the bassist of the Grammy-winning band Imagine Dragons. Known for his dynamic stage presence and musical versatility, he joined the band in 2009. A core contributor to the group’s signature sound, Ben blends rock, pop, and electronic elements seamlessly. Beyond music, he’s also recognized for his philanthropy and deep connection with fans.</p><div class="artist-card-image"><img  src="assets/ben.webp" style="object-fit:cover;height: 100%;width:80%;border: 1px solid white;"></div></div>
         </div>
         <div class="slide3">
             <div id="p1"><h2>LET'S <br>EXPLORE</h2><div><div class="anime"><span>&gt;</span><span>&lt;</span></div><span style="align-content: center;">Proud recipients of 6 x RIAA Gold® awards!</span></div></div>
