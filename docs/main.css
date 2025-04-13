@@ -14,7 +14,8 @@ padding: 8px;
     font-style: normal;
     font-variation-settings:"wdth" 100;
   
-  
+  user-select: none;
+  -webkit-user-select: none;
   background: black;
   background-image: linear-gradient(rgba(255, 255,255, .05) .1em, transparent .1em), linear-gradient(90deg, rgba(255, 255, 255, .05) .1em, transparent .1em);
   background-size: 5em 5em;
