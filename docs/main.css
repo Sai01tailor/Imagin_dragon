@@ -78,6 +78,7 @@ html{
 
 }
 #menu_part{
+    background-color: rgba(128, 128, 128, 0.05)!important;backdrop-filter: blur(1em) !important;border: 2px solid rgba(128, 128, 128, 0.219);
     height: 40vh;width: 33%; background-color: rgba(128, 128, 128, 0.8);color: white !important;;
     z-index: 4;
 }
