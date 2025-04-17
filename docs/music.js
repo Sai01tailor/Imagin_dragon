@@ -8,33 +8,47 @@ let merch_item = [
         Url: "assets/believer.mp3"
     },
     {
-        card_image: "assets/card_image.png",
+        card_image: "assets/radioactive.webp",
         title: "RadioActive",
         album: 'singles',
         artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
     },
     {
-        card_image: "assets/card_image.png",
+        card_image: "assets/Demons.webp",
         title: "Demons",
-        album: 'Beyond Death',
+        album: 'Night Vision',
         artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
     },
     {
-        card_image: "assets/card_image.png",
+        card_image: "assets/Bones.webp",
         title: "Bones",
         album: 'Beyond Death',
         artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
     },
     {
-        card_image: "assets/card_image.png",
+        card_image: "assets/Demons.webp",
+        title: "On the Top of world",
+        album: 'Night Vision',
+        artist: 'Dan Reynolds',
+        Url: "assets/believer.mp3"
+    },
+    {
+        card_image: "assets/Enemy.jpg",
         title: "Enemy",
         album: 'Arcane',
         artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
-    }
+    },
+    {
+        card_image: "assets/Demons.webp",
+        title: "Its Time",
+        album: 'Night Vision',
+        artist: 'Dan Reynolds',
+        Url: "assets/believer.mp3"
+    },
 ];
 function unhide_me(){
     let v =document.getElementById("menu_part")
