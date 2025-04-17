@@ -2,37 +2,37 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 let merch_item = [
     {
         card_image: "assets/card_image.png",
-        title: "Title",
-        album: 'album',
-        artist: 'artist',
+        title: "believer",
+        album: 'Singles',
+        artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
     },
     {
         card_image: "assets/card_image.png",
-        title: "Title",
-        album: 'album',
-        artist: 'artist',
+        title: "RadioActive",
+        album: 'singles',
+        artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
     },
     {
         card_image: "assets/card_image.png",
-        title: "Title",
-        album: 'album',
-        artist: 'artist',
+        title: "Demons",
+        album: 'Beyond Death',
+        artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
     },
     {
         card_image: "assets/card_image.png",
-        title: "Title",
-        album: 'album',
-        artist: 'artist',
+        title: "Bones",
+        album: 'Beyond Death',
+        artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
     },
     {
         card_image: "assets/card_image.png",
-        title: "Title",
-        album: 'album',
-        artist: 'artist',
+        title: "Enemy",
+        album: 'Arcane',
+        artist: 'Dan Reynolds',
         Url: "assets/believer.mp3"
     }
 ];

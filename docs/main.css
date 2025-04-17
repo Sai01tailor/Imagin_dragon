@@ -33,7 +33,7 @@ padding: 8px;
     --pseudo_content1 : -5px -4px;
     --rot_slide1 : 5deg;
     --translunhide :90vh;
-  }
+}
   
 html{
     scroll-behavior: smooth;

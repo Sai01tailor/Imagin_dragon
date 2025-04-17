@@ -35,9 +35,53 @@ let merch_item = [
         type:"tops"
     }
 ];
-document.addEventListener('contextmenu', event => event.preventDefault());
+let fireON = [
+    {   id:6,
+        image: "assets/fireON-hoddie.png",
+        title: "Fire ON Hoddie Male(Size m)",
+        Mrp: "20USD",
+        link: "item.html",
+        type:"tops"
+    },
+    {   id:7,
+        image: "assets/FireON-tf.png",
+        title: "Fire ON  T-SHIRT -female (Size M)",
+        Mrp: "20USD",
+        link: "item.html",
+        type:"tops"
+    },
+    {   id:8,
+        image: "assets/fireON-hoddie.png",
+        title: "Fire ON Hoddie Male(Size L)",
+        Mrp: "20USD",
+        link: "item.html",
+        type:"tops"
+    },
+    {   id:9,
+        image: "assets/FireON-tf.png",
+        title: "Fire ON  T-SHIRT -female (Size L)",
+        Mrp: "20USD",
+        link: "item.html",
+        type:"tops"
+    },
+    {   id:10,
+        image: "assets/fireON-hoddie.png",
+        title: "Fire ON Hoddie Male(Size XL)",
+        Mrp: "20USD",
+        link: "item.html",
+        type:"tops"
+    },
+    {   id:11,
+        image: "assets/FireON-tf.png",
+        title: "Fire ON  T-SHIRT -female (Size XL)",
+        Mrp: "20USD",
+        link: "item.html",
+        type:"tops"
+    }
+];
 let total = 0;
 let cart = [];
+if(document.querySelector(".store-items")){
 for (let item of merch_item) {
     document.querySelector(".store-items").innerHTML += 
         `<div class="item-card">
@@ -48,7 +92,31 @@ for (let item of merch_item) {
                 <button class="add-to-cart" onclick='carting(${item.id})'>add to cart</button>
             </div>
         </div>`;
-}
+}}
+if(document.querySelector(".store-items2")){
+for (let item of merch_item) {
+    document.querySelector(".store-items2").innerHTML += 
+        `<div class="item-card">
+            <div class="images"><img src="${item.image}" alt="${item.title}" ></div>
+            <div class="text">
+                <h3 class="titled" >${item.title}</h3>
+                <h4 class="price">${item.Mrp}</h4>
+                <button class="add-to-cart" onclick='carting(${item.id})'>add to cart</button>
+            </div>
+        </div>`;
+}}
+if(document.querySelector(".store-items2")){
+for (let item of fireON) {
+    document.querySelector(".store-items3").innerHTML += 
+        `<div class="item-card">
+            <div class="images"><img src="${item.image}" alt="${item.title}" ></div>
+            <div class="text">
+                <h3 class="titled" >${item.title}</h3>
+                <h4 class="price">${item.Mrp}</h4>
+                <button class="add-to-cart" onclick='carting(${item.id})'>add to cart</button>
+            </div>
+        </div>`;
+}}
 function carting(a){
     cart.push(a);
     document.querySelector(".nos-cart").innerHTML = cart.length;
@@ -68,8 +136,16 @@ function getTitleById(id) {
     let item = merch_item.find(i => i.id === id);
     return item ? item.title : false;
 }
+function getTitleById(id) {
+    let item = fireON.find(i => i.id === id);
+    return item ? item.title : false;
+}
 function getitemById(id) {
     let item = merch_item.find(i => i.id === id);
+    return item 
+}
+function getitemById(id) {
+    let item = fireON.find(i => i.id === id);
     return item 
 }
 document.querySelector(".nos-cart").innerHTML = cart.length;
